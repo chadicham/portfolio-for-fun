@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="description" content="Hey I'm Chadi. I'm a student web developer.">
+    <link rel="stylesheet" href="https://use.typekit.net/cpz3yvv.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Style-switcher -->
+    <link rel="stylesheet" href="stylesheet/skins/color-1.css" class="alternate-style" title="color-1" >
+    <link rel="stylesheet" href="stylesheet/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="stylesheet/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="stylesheet/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="stylesheet/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="stylesheet/style-switcher.css">
+      </head>
+      <body>
+    <!-- Main Container Start -->
+    <div class="main-container">
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                               Aside Start                               -->
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="aside">
+        <div class="logo">
+          <a href="#">Portfolio.</a>
+        </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+        <ul class="nav">
+          <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+          <!-- <li><a href="#about"><i class="fa fa-user"></i> About</a></li> -->
+          <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+          <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+          <div class="social-media">
+            <a href="https://github.com/chadicham"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/chadi_cham/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://www.linkedin.com/in/chadi-chammout-454320228"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.behance.net/chadichammoujt"><i class="fa-brands fa-behance"></i></a>
+          </div>
+        </ul>
+        
+      </div>
+      <!-- Aside End -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                           Main Content Start                            -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="main-content">
+      <!-- Home Section Start -->
+      <section class="home active section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">Hello, my name is <span class="name">Chadi Chammout</span></h3>
+              <h3 class="my-profession">
+                <span class="text first-text"> I am</span>
+                <span class="text sec-text">web developer</span>
+              </h3>
+              <p>I'm a junior web developer, student at SAE Institute</p>
+              <a href="#contact" class="btn hire-me">Hire me</a>
+            </div>
+            <div class="home-img padd-15">
+              <img src="./images/profil-flower2.png" alt="Picture of the handsome developer">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home Section End -->
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                         Portfolio Section Start                         -->
+      <!-- ----------------------------------------------------------------------- -->
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portfolio-heading padd-15">
+              <h2>My last projects :</h2>
+            </div>
+          </div>
+          <div class="row center-item">
+            <!-- portfolio Projects -->
+          <i onclick="previous()" id="left-icon" class="fa-solid fa-angle-left icon-selector"></i>
+            <div class="carousel">
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner  shadow-dark">
+                  <div class="portfolio img">
+                    <img class="img-projects" src="./images/Forge.png" alt="view of the Forge project">
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio img">
+                    <img class="img-projects" src="./images/Neptunia.png" alt="view of the Neptunia project">
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio img">
+                    <img class="img-projects" src="./images/Fabulous-home.png" alt="view of the Fabulous project">
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio img">
+                    <img class="img-projects" src="./images/Form.png" alt="view of the Form project">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i onclick="next()" id= "right-icon" class="fa-solid fa-angle-right icon-selector"></i>
+          </div>
+          <button onclick="toggleAutoplay()" class="auto-btn">Pause</button>
+        </div>
+      </section>
+      
+    <!-- Portfolio Section End -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                          Contact Section Start                          -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title padd-15">
+            <h2>Contact me</h2>
+          </div>
+        </div>
+          <h3 class="contact-title padd-15">Have you any quest? </h3>
+          <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+          <div class="row">
+            <!-- Contact info item start -->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4>Call me on</h4>
+              <p>079 176 39 90</p>
+            </div>
+            <!-- Contact info item end -->
+            <!-- Contact info item start -->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-map-marker"></i></div>
+              <h4>Location</h4>
+              <p>Geneva</p>
+            </div>
+            <!-- Contact info item end -->
+            <!-- Contact info item start -->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4>Email</h4>
+              <p>chadi.chammout@gmail.com</p>
+            </div>
+            <!-- Contact info item end -->
+            <!-- Contact info item start -->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-globe-europe"></i></div>
+              <h4>Website</h4>
+              <p>"lien de mon site"</p>
+            </div>
+            <!-- Contact info item end -->
+          </div>
+          <h3 class="contact-title padd-15">SEND ME AN EMAIL </h3>
+          <h4 class="contact-sub-title padd-15">I'M RESPOSIVE TO MESSAGES</h4>
+          <!-- Contact Form -->
+          <div class="row">
+            <div class="contact-form padd-15">
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                  </div>
+                </div>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="surename" placeholder="Surename">
+                  </div>
+                </div>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="phone" placeholder="Phone">
+                  </div>
+                </div>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea name="" class="form-control" id="message" placeholder="Message"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <button onclick="checkForm()" type="submit" class="btn">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- Contact section End -->
+    </div>
+    <!-- Main Content End -->
+    <!-- Style Switcher Start -->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+      <div class="day-night s-icon">
+        <i class="fas "></i>
+      </div>
+      <h4>Theme Colors</h4>
+   
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+    <!-- Style Switcher End -->
+    <!-- Main Container End -->
+    
+  <script src="js/index.js"></script>
+  <script src="js/style-switcher.js"></script>
+</body>
+</html>
